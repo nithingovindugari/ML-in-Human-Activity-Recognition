@@ -1,46 +1,28 @@
-# Machine Learning in Human Activity Recognition
+This project aims to classify the activity type performed by individuals based on smartphone sensor data. Using the data collected from the accelerometers and gyroscopes of smartphones, we apply machine learning algorithms to predict activities such as standing, walking, and lying down.
 
-## Project Overview
-Human Activity Recognition (HAR) using smartphones is an area of active research in ubiquitous computing. This project aims to apply various machine learning techniques to recognize activities from sensor data collected from smartphone accelerometers and gyroscopes.
+## Dataset
+The dataset for this project includes time-series sensor data recorded from smartphones carried by individuals performing different activities. The activities are pre-labeled, and the data is segmented into windows with corresponding activity labels.
 
-## Dataset Description
-The dataset used in this project consists of sensor data collected from a group of participants performing activities of daily living while carrying a waist-mounted smartphone. The sensors capture 3-axial linear acceleration and 3-axial angular velocity at a constant rate.
+## Features
+The dataset features include time and frequency domain variables derived from the sensor signals. The preprocessing steps involve noise filtering, normalization, and feature extraction.
 
-## Objective
-The primary objective is to train machine learning models that can accurately predict the activity performed by the user based on sensor data inputs.
+## Machine Learning Pipeline
+The analysis pipeline includes the following steps:
+- Data Preprocessing: Cleaning and normalizing data, handling missing values, and feature scaling.
+- Feature Selection: Identifying the most relevant features for activity recognition.
+- Model Selection: Training and comparing different machine learning models such as Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, XGBClassifier, AdaBoost Classifier
+- Hyperparameter Tuning: Optimizing models for better accuracy using techniques like grid search.
+- Model Evaluation: Assessing the performance of models using metrics such as accuracy, precision, recall, and confusion matrices.
 
-## Methodology
-- Data Preprocessing: Scaling features, handling missing values, and normalizing the sensor data.
-- Feature Engineering: Extracting meaningful features from raw data that can help in improving the model's performance.
-- Model Training: Building and training machine learning models such as Random Forest, SVM, KNN, etc.
-- Evaluation: Assessing the models using appropriate metrics such as accuracy, precision, recall, and F1-score.
-- Visualization: Creating visual representations of the data and results to better understand the models' performance.
+## Key Findings
+- Discussion of which models performed the best and insights gained from the model evaluations.
+- Observations from the feature importance analysis and how different activities affect sensor readings.
 
-## File Descriptions
-- `data_ingestion.py`: Contains code for loading and initial processing of data.
-- `data_transformation.py`: Script for data normalization and feature engineering.
-- `model_training.py`: Includes machine learning model definitions and training procedures.
-- `model_evaluation.py`: For evaluating model performance and reporting metrics.
-- `data_visualization.py`: Code for generating various plots and charts to visualize the data and results.
+## How to Use
+Instructions for setting up the environment, running the analysis, and replicating the results:
+1. Clone the repository.
+2. Install the required dependencies listed in `requirements.txt`.
+3. Run the Jupyter Notebook to see the step-by-step analysis.
 
-## Results
-The models trained in this project achieved the following performance metrics:
-- Random Forest: Accuracy - XX%, F1-score - XX%
-- SVM: Accuracy - XX%, F1-score - XX%
-- (Include metrics for other models)
-
-## Usage
-Instructions on how to set up the environment, run the scripts, and replicate the results.
-
-## Contributing
-Guidelines for how others can contribute to the project.
-
-## License
-State the license under which this project is made available.
-
-## Authors
-- [Your Name](Your GitHub Profile Link)
-
-## Acknowledgements
-- Mention any individuals, organizations, or datasets that were instrumental in this project.
-
+## Requirements
+A list of libraries and versions used in the project can also be found in `requirements.txt`.

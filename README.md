@@ -1,4 +1,4 @@
-This project aims to classify the activity type performed by individuals based on smartphone sensor data. Using the data collected from the accelerometers and gyroscopes of smartphones, we apply machine learning algorithms to predict activities such as standing, walking, and lying down.
+This Multi Class Classification project aims to classify the activity type performed by individuals based on smartphone sensor data. Using the data collected from the accelerometers and gyroscopes of smartphones, we apply machine learning algorithms to predict activities such as standing, walking, and lying down.
 
 ## Dataset
 The dataset for this project includes time-series sensor data recorded from smartphones carried by individuals performing different activities. The activities are pre-labeled, and the data is segmented into windows with corresponding activity labels.
